@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Employee Details</title>
+        <link rel="stylesheet" href="employeeDetails.css">
+        <script src="employeeDetails.js"></script>
+    </head>
+    <body>
+        <div class="container1">
+            <div class="header">
+                <b>EMPLOYEE DETAILS</b>
+            </div>
+            <ul class="userInput">
+                <li>
+                    <div class="label">
+                        Enter Employee Name:
+                    </div>
+                    <input type="text" id="name">
+                </li>
+                <li>
+                    <div class="label">
+                        Enter Gender:
+                    </div>
+                    <input type="text" placeholder="male/female" id="gender">
+                    <!--<input type="radio" name="gender" id="mgender">male
+                    <input type="radio" name="gender" id="fgender">female-->
+                </li>
+                <li>
+                    <div class="label">
+                        Enter Age:
+                    </div> 
+                    <input type="number" id="age">
+                </li>
+                <li>
+                    <div class="label">
+                        Enter Department:
+                    </div> 
+                    <input type="text" id="dep">
+                </li>
+                <li>
+                    <div class="label">
+                        Enter Base Salary:
+                    </div> 
+                    <input type="number" id="baseSalary">
+                </li>
+                <li class="submit">
+                    <input type="button" value="SUBMIT" onclick="userInput();">
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <div class="container2">
+            <div class="header">
+                <b>EMPLOYEE DETAILS</b>
+            </div>
+            <ul class="showUserInput">
+                <li class="show">
+                    <div class="displayLabel">
+                        <b>Employee Name:
+                    </div>
+                    <span class="name"></span>
+                </li>
+                <li class="show">
+                    <div class="displayLabel">
+                        <b>Gender:</b>
+                    </div>
+                    <span class="gender"></span>
+                </li>
+                <li class="show">
+                    <div class="displayLabel">
+                        <b>Age:</b>
+                    </div>
+                    <span class="age"></span>
+                </li>
+                <li class="show">
+                    <div class="displayLabel">
+                        <b>Department:</b>
+                    </div>
+                    <span class="department"></span>
+                </li>
+                <li class="show">
+                    <div class="displayLabel">
+                        <b>Base Salary:</b>
+                    </div>
+                    <span class="baseSalary"></span>
+                </li>
+                <li class="show">
+                    <div class="displayLabel">
+                        <b>HRA:</b>
+                    </div>
+                    <span class="hra"></span>
+                </li>
+                <li class="show">
+                    <div class="displayLabel">
+                        <b>PF:</b>
+                    </div>
+                    <span class="pf"></span>
+                </li>
+                <li class="show">
+                    <div class="displayLabel">
+                        <b>Total Salary:</b>
+                    </div>
+                    <span class="totalSalary"></span>
+                </li>
+                <li class="show">
+                    <div class="displayLabel">
+                        <b>Tax:</b>
+                    </div>
+                    <span class="tax"></span>
+                </li>
+                <li class="show">
+                    <div class="displayLabel">
+                        <b>Monthly Earnings:</b>
+                    </div>
+                    <span class="monthlyEarnings"></span>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>
