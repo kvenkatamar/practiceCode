@@ -7,6 +7,7 @@
         <title>Employee Details</title>
         <link rel="stylesheet" href="employeeDetails.css">
         <script src="employeeDetails.js"></script>
+        <script src="dynamicEventHandling.js"></script>
     </head>
     <body>
         <div class="container1">
@@ -32,26 +33,35 @@
                     <div class="label">
                         Enter Age:
                     </div> 
-                    <input type="number" id="age">
+                    <input type="text" id="age" placeholder="in years" onkeypress="return validateData1(event, '.error1')">
+                    <div class="error1">
+                        !Please enter only the numbers
+                    </div>
+                    <div class="minAge">
+                        !Age must be greater than 18years
+                    </div>
                 </li>
                 <li>
                     <div class="label">
                         Enter Department:
                     </div> 
-                    <input type="text" id="dep">
+                    <input type="text" id="dep" onkeypress="return validateData2(event)">
                 </li>
                 <li>
                     <div class="label">
                         Enter Base Salary:
                     </div> 
-                    <input type="number" id="baseSalary">
+                    <input type="text" id="baseSalary" onkeypress="return validateData1(event, '.error2')">
+                    <div class="error2">
+                        !Please enter only the numbers
+                    </div>
                 </li>
                 <li class="submit">
-                    <input type="button" value="SUBMIT" onclick="userInput();">
+                    <input type="button" value="SUBMIT" id="submitbtn" onclick="userInput();">
                 </li>
             </ul>
         </div>
-        <hr>
+        <hr class="separator">
         <div class="container2">
             <div class="header">
                 <b>EMPLOYEE DETAILS</b>

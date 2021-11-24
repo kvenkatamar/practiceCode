@@ -60,6 +60,7 @@ function taxCalculation() {
                 employeeDetails.tax = 0;
             }
         }
+        break;
     }
     employeeDetails.monthlyEarnings = employeeDetails.totalSalary - employeeDetails.tax;
     showEmployeeDetails();
@@ -70,4 +71,9 @@ function showEmployeeDetails() {
         var id = '.' + tempKey;
         document.querySelector(id).innerHTML = employeeDetails[tempKey];
     }
+    document.querySelector("#name").value = '';
+    document.querySelector("#gender").value = '';
+    document.querySelector("#age").value = '';
+    document.querySelector("#dep").value = '';
+    document.querySelector("#baseSalary").value = '';
 }
