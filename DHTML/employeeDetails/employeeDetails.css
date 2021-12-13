@@ -51,7 +51,7 @@ li {
 span {
     font-weight: lighter;
 }
-.error1,.error2, .minAge{
+.error1,.error2, .minAge, .genderError{
     font-size: small;
     font-weight: lighter;
     color: red;
