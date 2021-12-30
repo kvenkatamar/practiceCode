@@ -40,3 +40,6 @@ ul{
     height: 1px;
     border-bottom: 2px dotted black;
 }
+.submit-btn{
+    text-align: center;
+}

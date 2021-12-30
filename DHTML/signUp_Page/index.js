@@ -1,4 +1,4 @@
-/*var validateUserID = (event) => {
+var validateUserID = (event) => {
     //removing mailID validation
     document.querySelector(".error-2").style.display = 'none';
     document.querySelector(".error-2_1").style.display = 'none';
@@ -39,7 +39,7 @@ var validateMailID = (event) => {
         }
         return true;
     }
-}*/
+}
 var validatePassword = (event) => {
     var pwd = document.querySelector(".pwd").value;
     //pwd can't be empty
@@ -81,16 +81,17 @@ var validatePassword = (event) => {
         return false;
     }
     else{
-        validateRePwd();
-        return true;
+        validateRePwd(event);
     }
 }
-var validateRePwd = () => {
+var validateRePwd = (event) => {
     if(document.querySelector(".pwd").value == document.querySelector(".rePwd").value){
         document.querySelector(".error-4").style.display = 'none';
+        return false;
     }
     else{
         document.querySelector(".error-4").style.display = 'block';
+        return true;
     }
 }
 var clearValidateUserID = (event) => {

@@ -15,7 +15,7 @@
                     <div class="left">
                         User ID
                     </div>
-                    <input type="text" class="enter userId">
+                    <input type="text" class="enter userId" onkeypress="return clearValidateUserID(event)">
                     <div class="error-1">
                         !user ID can't be empty
                     </div>
@@ -24,7 +24,7 @@
                     <div class="left">
                         Mail ID
                     </div>
-                    <input type="text" class="enter mailId">
+                    <input type="text" class="enter mailId" onkeypress="return validateUserID(event)">
                     <div class="error-2">
                         !Mail ID can't be empty
                     </div>
@@ -36,7 +36,7 @@
                     <div class="left">
                         Password
                     </div>
-                    <input type="password" class="enter pwd" minlength="8">
+                    <input type="password" class="enter pwd" minlength="8" onkeypress="return validateMailID(event)">
                     <div class="error-3">
                         !Password can't be empty
                     </div>
